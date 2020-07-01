@@ -22,25 +22,25 @@ drop database test;
 
 -- **Table level**
 -- Revise table name
-alter table test1 rename test2;
+alter table student rename student1;
 
 -- Revise the field's data type
-alter table test1 modify column id int(10);
+alter table student modify column id int(10);
 
 -- Revise field name
-alter table test1 change id s_id varchar(10);
+alter table student change id s_id varchar(10);
 
 -- Add field
-alter table test1 add column name varchar(20);
+alter table student add column weight double;
 
 -- Delete field
-alter table test1 drop column name;
+alter table student drop column name;
 
 -- Revise the table's storage engine
-alter table test1 ENGINE=InnoDB;
+alter table student ENGINE=InnoDB;
 
 -- Delete the table's foreign key restriant
-alter table test1 drop foreign key restriant_name;
+alter table student drop foreign key restriant_name;
 
 -- Delete a table
-drop table test1;
+drop table student;
